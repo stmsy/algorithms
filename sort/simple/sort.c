@@ -10,7 +10,7 @@ int main()
     char fname[] = "../../data/numbers.txt";
     int n = 100000;
     int a[n];
-    int i, j, tmp, result;
+    int i, result;
     long start, end;
     double time;
 
