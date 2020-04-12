@@ -1,7 +1,7 @@
-#include "shell.h"
+#include "shell_sort.h"
 
 
-int shell(int a[], int n)
+int shell_sort(int a[], int n)
 {
     int i, j, h, tmp;
     for (h = n/2; h > 0; h = h/2) {

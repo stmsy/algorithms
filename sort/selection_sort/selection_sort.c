@@ -1,7 +1,7 @@
-#include "selection.h"
+#include "selection_sort.h"
 
 
-int selection(int a[], int n)
+int selection_sort(int a[], int n)
 {
     int i, j, k, min;
     for (i = 0; i < n; i++) {

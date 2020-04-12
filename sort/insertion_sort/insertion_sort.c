@@ -1,7 +1,7 @@
-#include "insertion.h"
+#include "insertion_sort.h"
 
 
-int insertion(int a[], int n)
+int insertion_sort(int a[], int n)
 {
     int i, j, tmp;
     for (i = 1; i < n; i++) {

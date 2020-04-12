@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "selection.h"
+#include "shell_sort.h"
 
 
 int main()
@@ -32,7 +32,7 @@ int main()
 
     /* Sort the array of integers in ascending order */
     start = clock();
-    result = selection(a, n);
+    result = shell_sort(a, n);
     end = clock();
 
     if (result == 0) {
