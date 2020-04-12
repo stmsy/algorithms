@@ -1,6 +1,6 @@
 #include "simple.h"
 
-#define swap(x, y) {int temp; tmp = x; x = y; y = tmp;}
+#define swap(x, y) {int tmp; tmp = x; x = y; y = tmp;}
 
 
 int simple(int a[], int n)

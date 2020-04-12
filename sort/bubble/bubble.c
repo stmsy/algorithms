@@ -1,6 +1,6 @@
 #include "bubble.h"
 
-#define swap(x, y) {int temp; tmp = x; x = y; y = tmp;}
+#define swap(x, y) {int tmp; tmp = x; x = y; y = tmp;}
 
 
 int bubble(int a[], int n)
