@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "bubble.h"
+#include "bubble_sort.h"
 
 
 int main()
@@ -32,7 +32,7 @@ int main()
 
     /* Sort the array of integers in ascending order */
     start = clock();
-    result = bubble(a, n);
+    result = bubble_sort(a, n);
     end = clock();
 
     if (result == 0) {

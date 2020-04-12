@@ -1,9 +1,9 @@
-#include "bubble.h"
+#include "bubble_sort.h"
 
 #define swap(x, y) {int tmp; tmp = x; x = y; y = tmp;}
 
 
-int bubble(int a[], int n)
+int bubble_sort(int a[], int n)
 {
     int i, j, tmp;
     for (i = 0; i < n; i++) {
