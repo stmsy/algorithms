@@ -8,8 +8,8 @@ int main()
 {
     FILE *fp;
     char fname[] = "../../data/numbers.txt";
-    int N = 100000;
-    int a[N];
+    int n = 100000;
+    int a[n];
     int i, j, tmp, result;
     long start, end;
     double time;
@@ -22,7 +22,7 @@ int main()
         return -1;
     }
 
-    for (i = 0; i < N; i++) {
+    for (i = 0; i < n; i++) {
 	fscanf(fp, "%d", &(a[i]));
     }
 
@@ -32,14 +32,14 @@ int main()
 
     /* Sort the array of integers in ascending order */
     start = clock();
-    result = bubble(a, N);
+    result = bubble(a, n);
     end = clock();
 
     if (result == 0) {
         printf("===============================\n");
         printf("sorted array:\n");
 
-        for (i = 0; i < N; i++) {
+        for (i = 0; i < n; i++) {
             printf("a[%d]: %d\n", i, a[i]);
         }
 
