@@ -10,7 +10,7 @@ int main()
     char fname[] = "../../data/numbers.txt";
     int n = 100000;
     int a[n];
-    int i, right, left, result;
+    int i, first, last, result;
     long start, end;
     double time;
 
@@ -32,9 +32,9 @@ int main()
 
     /* Sort the array of integers in ascending order */
     start = clock();
-    left = 0;
-    right = n - 1;
-    result = quick_sort(a, left, right);
+    first = 0;
+    last = n - 1;
+    result = quick_sort(a, first, last);
     end = clock();
 
     if (result == 0) {

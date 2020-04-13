@@ -3,14 +3,14 @@
 #define swap(x, y) {int tmp; tmp = x; x = y; y = tmp;}
 
 
-int quick_sort(int a[], int left, int right)
+int quick_sort(int a[], int first, int last)
 {
     int i, j, middle, pivot;
-    if (left >= right)
-	return 0;
-    middle = (left + right) / 2;
+    if (first >= last)
+	return -1;
+    middle = (first + last) / 2;
     pivot = a[middle];
-    i = left; j = right;
+    i = first; j = last;
     while (i <= j) {
         while (a[i] < pivot)
 	    i++;
@@ -21,7 +21,7 @@ int quick_sort(int a[], int left, int right)
 	    i++; j--;
 	}
     };
-    quick_sort(a, left, j);
-    quick_sort(a, i, right);
+    quick_sort(a, first, j);
+    quick_sort(a, i, last);
     return 0;
 }
