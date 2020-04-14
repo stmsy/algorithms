@@ -7,7 +7,7 @@
 int main()
 {
     FILE *fp;
-    char fname[] = "../../data/numbers.txt";
+    char fname[] = "../../data/unsorted_numbers.txt";
     int n = 100000;
     int a[n];
     int i, result;

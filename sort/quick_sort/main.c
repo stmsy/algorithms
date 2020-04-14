@@ -7,7 +7,7 @@
 int main()
 {
     FILE *fp;
-    char fname[] = "../../data/numbers.txt";
+    char fname[] = "../../data/unsorted_numbers.txt";
     int n = 100000;
     int a[n];
     int i, first, last, result;
@@ -31,9 +31,9 @@ int main()
     printf("sorting...\n");
 
     /* Sort the array of integers in ascending order */
-    start = clock();
     first = 0;
     last = n - 1;
+    start = clock();
     result = quick_sort(a, first, last);
     end = clock();
 
