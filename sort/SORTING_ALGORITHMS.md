@@ -10,7 +10,7 @@ MERGE(A, l, m, u)
  4 for i = 0 to n1-1
  5     L[i] = A[l + i]
  5 for j = 0 to n2-1
- 6     L[j] = A[m + j + 1]
+ 6     R[j] = A[m + j + 1]
  7 L[n1] = inf
  8 R[n2] = inf
  9 i = 1
