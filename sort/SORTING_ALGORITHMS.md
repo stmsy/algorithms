@@ -1,5 +1,17 @@
 # Sorting Algorithms
 
+## Simple Sort
+
+```
+SIMPLE-SORT(A)
+ 1 for i = 0 to A.length
+ 2     for j = i + 1 to A.length
+ 3         if A[i] > A[j]
+ 4             exchange A[j] with A[i]
+ 5         j = j + 1
+ 6     i = i + 1
+```
+
 ## Bubble Sort
 
 ```
