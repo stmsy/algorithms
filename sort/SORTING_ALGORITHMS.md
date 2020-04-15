@@ -1,5 +1,68 @@
 # Sorting Algorithms
 
+## Bubble Sort
+
+```
+BUBBLE-SORT(A)
+ 1 for i = 0 to A.length
+ 2     for j = 0 to A.length - i
+ 3         if A[j] > A[j+1]
+ 4             exchange A[j+1] with A[j]
+ 5         j = j + 1
+ 6     i = i + 1
+```
+
+## Insertion Sort
+
+```
+INSERTION-SORT(A)
+ 1 for j = 1 to A.length
+ 2     key = A[j]
+ 3     // Insert A[j] into the sorted subsequence A[0, j-1]
+ 4     i = j - 1
+ 5     while i > 0 and A[i] > key
+ 6         A[i + 1] = A[i]
+ 7         i = i - 1
+ 8     A[i + 1] = key
+```
+
+## Selection Sort
+
+```
+SELECTION-SORT(A)
+ 1 for i = 0 to A.length
+ 2     k = i
+ 3     key = A[i]
+ 4     for j = i + 1 to A.length
+ 5         if A[j] < key
+ 6             k = j
+ 7             key = A[j]
+ 8         j = j + 1
+ 9     A[k] = A[i]
+10     A[i] = key
+11     i = i + 1
+```
+
+## Quick Sort
+
+```
+PARTITION(A, l, u)
+ 1 x = A[u]
+ 2 i = l - 1
+ 3 for j = p to u - 1
+ 4     if A[j] <= x
+ 5         i = i + 1
+ 6         exchange A[i] with A[j]
+ 7 exchage A[i + 1] with A[j]
+ 8 return i + 1
+
+QUICK-SORT(A, l, u)
+ 1 if l < u
+ 2     m = PARTIOTION(A, l, u)
+ 3     QUICK-SORT(A, l, m)
+ 4     QUICK-SORT(A, m+1, u)
+```
+
 ## Merge Sort
 
 ```
