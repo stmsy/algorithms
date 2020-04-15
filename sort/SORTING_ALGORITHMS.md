@@ -16,14 +16,14 @@ BUBBLE-SORT(A)
 
 ```
 INSERTION-SORT(A)
- 1 for j = 1 to A.length
- 2     key = A[j]
- 3     // Insert A[j] into the sorted subsequence A[0, j-1]
- 4     i = j - 1
- 5     while i > 0 and A[i] > key
- 6         A[i + 1] = A[i]
- 7         i = i - 1
- 8     A[i + 1] = key
+ 1 for i = 1 to A.length
+ 2     key = A[i]
+ 3     // Insert A[i] into the sorted subsequence A[0, i-1]
+ 4     j = i - 1
+ 5     while j > 0 and A[j] > key
+ 6         A[j + 1] = A[j]
+ 7         j = j - 1
+ 8     A[j + 1] = key
 ```
 
 ## Selection Sort
@@ -58,7 +58,7 @@ PARTITION(A, l, u)
 
 QUICK-SORT(A, l, u)
  1 if l < u
- 2     m = PARTIOTION(A, l, u)
+ 2     m = PARTITION(A, l, u)
  3     QUICK-SORT(A, l, m)
  4     QUICK-SORT(A, m+1, u)
 ```
