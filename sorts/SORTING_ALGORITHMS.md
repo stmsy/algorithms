@@ -4,8 +4,8 @@
 
 ```
 SIMPLE-SORT(A)
- 1 for i = 0 to A.length
- 2     for j = i + 1 to A.length
+ 1 for i = 0 to A.length - 1
+ 2     for j = i + 1 to A.length - 1
  3         if A[i] > A[j]
  4             exchange A[j] with A[i]
  5         j = j + 1
@@ -16,8 +16,8 @@ SIMPLE-SORT(A)
 
 ```
 BUBBLE-SORT(A)
- 1 for i = 0 to A.length
- 2     for j = 0 to A.length - i
+ 1 for i = 0 to A.length - 1
+ 2     for j = 0 to A.length - 1 - i
  3         if A[j] > A[j+1]
  4             exchange A[j+1] with A[j]
  5         j = j + 1
@@ -28,7 +28,7 @@ BUBBLE-SORT(A)
 
 ```
 INSERTION-SORT(A)
- 1 for i = 1 to A.length
+ 1 for i = 1 to A.length - 1
  2     key = A[i]
  3     // Insert A[i] into the sorted subsequence A[0, i-1]
  4     j = i - 1
@@ -42,10 +42,10 @@ INSERTION-SORT(A)
 
 ```
 SELECTION-SORT(A)
- 1 for i = 0 to A.length
+ 1 for i = 0 to A.length - 1
  2     k = i
  3     key = A[i]
- 4     for j = i + 1 to A.length
+ 4     for j = i + 1 to A.length - 1
  5         if A[j] < key
  6             k = j
  7             key = A[j]
