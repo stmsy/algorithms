@@ -61,7 +61,7 @@ SELECTION-SORT(A)
 PARTITION(A, l, u)
  1 x = A[u]
  2 i = l - 1
- 3 for j = p to u - 1
+ 3 for j = l to u - 1
  4     if A[j] <= x
  5         i = i + 1
  6         exchange A[i] with A[j]
