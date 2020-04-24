@@ -65,7 +65,7 @@ PARTITION(A, l, u)
  4     if A[j] <= x
  5         i = i + 1
  6         exchange A[i] with A[j]
- 7 exchage A[i + 1] with A[j]
+ 7 exchage A[i + 1] with A[u]
  8 return i + 1
 
 QUICK-SORT(A, l, u)
