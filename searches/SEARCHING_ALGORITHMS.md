@@ -25,3 +25,7 @@ BINARY-SEARCH(v, A, l, u)
 ```
 
 where `FLOOR` is the function that returns the largest integer that is smaller than or equal to the input value.
+
+## Reference
+
+1. Cormen, Thomas H, and Thomas H. Cormen. *Introduction to Algorithms*. Cambridge, Mass: MIT Press, 2001. Print.
